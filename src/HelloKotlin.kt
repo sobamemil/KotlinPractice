@@ -49,8 +49,14 @@ fun main() {
 //        // email의 기본값은 "email address". 즉, email로 넘어오는 값이 없으면 자동으로 "default" 입력
 //    }
 
-    println(highFunc({x, y -> x + y}, 10, 20)) // 람다식 함수를 인자로 넘김
+//    println(highFunc({x, y -> x + y}, 10, 20)) // 람다식 함수를 인자로 넘김
 
+    val res1 = sum(3, 2) // 일반 인자
+    val res2 = mul(sum(3,3), 3) // 인자에 함수를 사용
+
+    println("res1: $res1, res2: $res2")
 }
 
-fun highFunc(sum: (Int, Int) -> Int, a: Int, b: Int): Int = sum(a, b) // sum 매개변수는 함수
+// fun highFunc(sum: (Int, Int) -> Int, a: Int, b: Int): Int = sum(a, b) // sum 매개변수는 함수
+fun sum(a: Int, b: Int): Int = a + b
+fun mul(a: Int, b: Int): Int = a * b
