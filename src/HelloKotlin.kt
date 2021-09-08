@@ -44,8 +44,13 @@ fun main() {
 //        println("sum of $a and $b is ${a + b}")
 //    }
 
-    fun add(name: String, email: String = "email address") {
-        // name과 email을 회원 목록에 저장
-        // email의 기본값은 "email address". 즉, email로 넘어오는 값이 없으면 자동으로 "default" 입력
-    }
+//    fun add(name: String, email: String = "email address") {
+//        // name과 email을 회원 목록에 저장
+//        // email의 기본값은 "email address". 즉, email로 넘어오는 값이 없으면 자동으로 "default" 입력
+//    }
+
+    println(highFunc({x, y -> x + y}, 10, 20)) // 람다식 함수를 인자로 넘김
+
 }
+
+fun highFunc(sum: (Int, Int) -> Int, a: Int, b: Int): Int = sum(a, b) // sum 매개변수는 함수
