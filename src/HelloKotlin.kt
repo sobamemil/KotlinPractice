@@ -66,20 +66,29 @@ fun main() {
 //    // -->
 //    val max = if (a > b) a else b
 
-    val a = 12
-    val b = 7
+//    val a = 12
+//    val b = 7
+//
+//    // 블록과 함께 사용
+//    val max = if(a > b) {
+//        println("a 선택")
+//        a // 마지막 식인 a가 반환되어 max에 할당
+//    }
+//    else {
+//        println("b 선택")
+//        b // 마지막 식인 b가 반환되어 max에 할당
+//    }
+//
+//    println(max)
 
-    // 블록과 함께 사용
-    val max = if(a > b) {
-        println("a 선택")
-        a // 마지막 식인 a가 반환되어 max에 할당
-    }
-    else {
-        println("b 선택")
-        b // 마지막 식인 b가 반환되어 max에 할당
-    }
+    val score = 100
+    if (score in 80..100) {
+        println("합격")
+    } else {
+        println("불합격")
+   }
 
-    println(max)
+
 }
 
 //fun highFunc(sum: (Int, Int) -> Int, a: Int, b: Int): Int = sum(a, b) // sum 매개변수는 함수
