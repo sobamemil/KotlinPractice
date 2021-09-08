@@ -39,8 +39,13 @@ fun main() {
     //    fun sum3(a: Int, b: Int) = a + b
     //}
 
-    // 반환타입이 없는 경우 Unit
-    fun printSum(a: Int, b: Int): Unit {
-        println("sum of $a and $b is ${a + b}")
+//    // 반환타입이 없는 경우 Unit
+//    fun printSum(a: Int, b: Int): Unit {
+//        println("sum of $a and $b is ${a + b}")
+//    }
+
+    fun add(name: String, email: String = "email address") {
+        // name과 email을 회원 목록에 저장
+        // email의 기본값은 "email address". 즉, email로 넘어오는 값이 없으면 자동으로 "default" 입력
     }
 }
