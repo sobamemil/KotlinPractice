@@ -15,9 +15,24 @@
 //    println("str1: \"$str1\", str2: \"$str2\"")
 //}
 
-fun main() {
-    var a: Int = "100".toInt()
-    var b: Double = "100.123".toDouble()
+//fun main() {
+//    var a: Int = "100".toInt()
+//    var b: Double = "100.123".toDouble()
+//
+//    print("a: ${a}, b: ${b}")
+//}
 
-    print("a: ${a}, b: ${b}")
+fun main() {
+    // 1, 2, 3 전부 동일한 코드
+    // 1
+    fun sum(a: Int, b: Int): Int {
+        var sum = a + b
+        return sum
+    }
+
+    // 2
+    fun sum2(a: Int, b: Int): Int = a + b
+
+    // 3
+    fun sum3(a: Int, b: Int) = a + b
 }
