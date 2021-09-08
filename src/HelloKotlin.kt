@@ -51,12 +51,22 @@ fun main() {
 
 //    println(highFunc({x, y -> x + y}, 10, 20)) // 람다식 함수를 인자로 넘김
 
-    val res1 = sum(3, 2) // 일반 인자
-    val res2 = mul(sum(3,3), 3) // 인자에 함수를 사용
+//    val res1 = sum(3, 2) // 일반 인자
+//    val res2 = mul(sum(3,3), 3) // 인자에 함수를 사용
+//
+//    println("res1: $res1, res2: $res2")
 
-    println("res1: $res1, res2: $res2")
+    // 아래 두개 동일 코드
+    var max: Int
+    if (a > b)
+        max = a
+    else
+        max = b
+
+    // -->
+    val max = if (a > b) a else b
 }
 
-// fun highFunc(sum: (Int, Int) -> Int, a: Int, b: Int): Int = sum(a, b) // sum 매개변수는 함수
-fun sum(a: Int, b: Int): Int = a + b
-fun mul(a: Int, b: Int): Int = a * b
+//fun highFunc(sum: (Int, Int) -> Int, a: Int, b: Int): Int = sum(a, b) // sum 매개변수는 함수
+//fun sum(a: Int, b: Int): Int = a + b
+//fun mul(a: Int, b: Int): Int = a * b
